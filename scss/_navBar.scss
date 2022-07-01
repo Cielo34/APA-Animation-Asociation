@@ -1,0 +1,31 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey;
+    
+    .botonera{
+        ul{
+            display: flex;
+            list-style: none;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            li{
+            margin-right: 10px;
+            a{
+                text-decoration: none;
+                color: $colorVerde;
+                text-transform: uppercase ;
+                &:hover{
+                    background-color: rgb(67, 230, 216);
+                img{
+                    margin-top: 15px;
+                }
+                }
+                
+            }
+        }
+        }
+        
+    }
+}

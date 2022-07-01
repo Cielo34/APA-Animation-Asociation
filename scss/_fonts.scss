@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@100&display=swap');
+
+//vars fonts
+
+$mainFont: 'Cabin', sans-serif;
+$secondaryFont: 'Roboto', sans-serif;
+
+//sizes
+
+$textSm: 0.7em;
+$textMd: 1em;
+$textL: 1.5em;
+
+
+h1 {
+    font-family:$mainFont;
+    font-size: $textL;
+    color:$colorVerde;
+}
+
+h2 {
+    font-family:$mainFont;
+    font-size: $textMd;
+    padding: 10px;
+    margin: 15px 10px;
+}
+
+h3 {
+    font-family:$secondaryFont;
+    text-align: center;
+    font-size: $textSm;
+}
+
+p {
+    font-size: $textMd;
+    padding: 25px;
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Roboto:wght@100&display=swap");
+h1 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5em;
+  color: #00a098; }
+
+h2 {
+  font-family: "Cabin", sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  margin: 15px 10px; }
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 0.7em; }
+
+p {
+  font-size: 1em;
+  padding: 25px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.scale:hover {
+  transform: scaleX(1.2);
+  cursor: pointer; }
+
+.contenedor-grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 18% auto auto 12%;
+  grid-template-areas: "header" "main" "texto" "pie"; }
+
+.header {
+  grid-area: header; }
+  .header nav {
+    margin-top: 20px; }
+
+.main {
+  grid-area: main; }
+  .main section img {
+    width: 100%; }
+
+.main2 {
+  grid-area: texto; }
+  .main2 h1 {
+    text-align: center;
+    padding-top: 15px; }
+
+.footer {
+  grid-area: pie; }
+  .footer .pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbdb; }
+  header .botonera ul {
+    display: flex;
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 15px; }
+    header .botonera ul li {
+      margin-right: 10px; }
+      header .botonera ul li a {
+        text-decoration: none;
+        color: #00a098;
+        text-transform: uppercase; }
+        header .botonera ul li a:hover {
+          background-color: #43e6d8; }
+          header .botonera ul li a:hover img {
+            margin-top: 15px; }
+
+footer {
+  padding: 20px 20px;
+  background-color: #00a098; }
+  footer .pie {
+    display: flex;
+    flex-direction: column; }
+    footer .pie h3 {
+      padding: 10px; }
+
+.socials {
+  list-style: none;
+  display: flex; }
+  .socials li a img {
+    width: 30px;
+    padding: 5px; }
+
+@media (min-width: 768px) {
+  .contenedor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 16% 1fr 12%;
+    grid-template-areas: "header header" "main texto" "pie pie"; }
+  header {
+    display: block; }
+    header .botonera {
+      display: flex;
+      justify-content: space-between; }
+      header .botonera ul {
+        padding: 15px; }
+      header .botonera a img {
+        padding: 15px; }
+  h1 {
+    margin-left: 15px; }
+  p {
+    padding: 25px;
+    font-size: 18px;
+    background-color: #ff58ab;
+    border-radius: 4%; }
+  #textReduce {
+    font-size: 26px; }
+  .main {
+    display: flex;
+    align-items: center; }
+    .main .imgContainer {
+      flex-direction: column; }
+    .main section img {
+      overflow: hidden;
+      width: 160%; }
+  .main2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #galleryLeft {
+    display: block; }
+  .pie {
+    flex-direction: row;
+    justify-content: center; } }
+
+@media (min-width: 1024px) {
+  .contenedor-grid {
+    grid-template-columns: repeat(2, 70% 30%);
+    overflow-x: hidden; }
+  #galleryLeft {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 250px; } }

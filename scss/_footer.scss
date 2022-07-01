@@ -1,0 +1,27 @@
+
+
+footer{
+    padding: 20px 20px;
+    background-color: $colorVerde;
+    .pie{
+        display: flex;
+        flex-direction: column;
+        h3{
+            padding: 10px;
+        }
+    }
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    li{
+        a{
+            img{
+                width: 30px;
+                padding: 5px;
+            }
+        }
+    }
+}
