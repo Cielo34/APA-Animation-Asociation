@@ -16,6 +16,9 @@ h1 {
     font-family:$mainFont;
     font-size: $textL;
     color:$colorVerde;
+    background-color: $grey;
+    text-align: center;
+    @include text(2em, 600, $black);
 }
 
 h2 {
@@ -28,10 +31,17 @@ h2 {
 h3 {
     font-family:$secondaryFont;
     text-align: center;
-    font-size: $textSm;
 }
 
 p {
+    @include text(1em, 600, $black);
     font-size: $textMd;
     padding: 25px;
 }
+
+.TextoFooter{
+    @include text($textMd, 600, $black);
+    color: $colorVerde;
+    padding: 5px;
+}
+

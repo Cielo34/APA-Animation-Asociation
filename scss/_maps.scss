@@ -1,0 +1,23 @@
+//maps
+
+$paleta: (
+    'fucsia': #ff007b,
+    'celeste': #00afb2,
+    'verde': #099CB3,
+    'amarillo': #FFE619,
+    'morado': #B3125F,
+    'gris': rgb(226, 226, 226),
+);
+
+p{
+    background-color: map-get($map:$paleta, $key:'celeste') ;
+} 
+
+.footer{
+    background-color: map-get($map:$paleta , $key:'gris');
+ }
+ 
+
+ #grey-text{
+    background-color: $grey;
+ }
