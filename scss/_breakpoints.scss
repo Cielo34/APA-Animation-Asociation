@@ -1,7 +1,10 @@
 
 @media (min-width:768px){
   
-    
+    .logo img{
+        width: 100%;
+    }
+
    .main{
     
     @include display-flex();

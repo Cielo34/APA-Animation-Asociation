@@ -14,10 +14,11 @@ p{
 } 
 
 .footer{
-    background-color: map-get($map:$paleta , $key:'gris');
+    background-color: map-get($map:$paleta , $key:'verde');
  }
  
 
  #grey-text{
     background-color: $grey;
  }
+

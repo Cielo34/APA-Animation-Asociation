@@ -3,11 +3,10 @@
     margin: 0;
 }
 
+// NAVBAR
 
-
-.scale:hover{
-    transform:scaleX(1.2);
-    cursor: pointer;
+.logo img{
+    width: 70%;
 
 }
 
@@ -42,12 +41,27 @@
 //STUDIOS
 
 .studios{
-    background-color: $white;
+    width: 100%;
+    background: rgb(255,0,123);
+    background: linear-gradient(90deg, rgba(255,0,123,1) 0%, rgba(9,156,179,1) 100%);
     padding: 20px;
+    
     img{
         padding: 5px;
         border-radius: 2%;
     }
+    .shadowCard{
+        -webkit-box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
+        -moz-box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
+        box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
+    }
+}
+
+#studioBox{
+    width: 100%;
+    margin-right: 0px;
+    box-sizing: none;
+    box-decoration-break: none;
 }
 
 //CONTACT
@@ -94,14 +108,10 @@
 }
 
 
-
-
-
-
-
 //FOOTER
 
 .footer{
+    border-top: 2px $white double;
     .socials{
         li{
             img{

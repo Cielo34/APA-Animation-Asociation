@@ -15,10 +15,8 @@ $textL: 1.5em;
 h1 {
     font-family:$mainFont;
     font-size: $textL;
-    color:$colorVerde;
-    background-color: $grey;
     text-align: center;
-    @include text(2em, 600, $black);
+    @include text(2em, 600, $white);
 }
 
 h2 {
@@ -26,6 +24,7 @@ h2 {
     font-size: $textMd;
     padding: 10px;
     margin: 15px 10px;
+    color: $white;
 }
 
 h3 {
@@ -34,14 +33,18 @@ h3 {
 }
 
 p {
-    @include text(1em, 600, $black);
+    @include text(1em,400, $white);
     font-size: $textMd;
     padding: 25px;
+    border-radius: 5px;
+    border: dashed $grey 1px;
+    -webkit-box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
+    -moz-box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
+    box-shadow: 8px 11px 17px -6px rgba(51,51,51,0.74);
 }
 
 .TextoFooter{
-    @include text($textMd, 600, $black);
-    color: $colorVerde;
+    @include text($textMd, 400, $black);
+    color: $white;
     padding: 5px;
 }
-
