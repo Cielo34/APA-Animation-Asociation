@@ -41,6 +41,9 @@ p {
   padding: 0;
   margin: 0; }
 
+body {
+  overflow-x: hidden; }
+
 .logo img {
   width: 70%; }
 
@@ -81,11 +84,15 @@ p {
   text-align: center; }
 
 .contactPage {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 25px; }
+  margin-bottom: 0px; }
+
+#botones {
+  margin: 0px 10px; }
 
 .buttons {
   display: flex;
@@ -96,7 +103,7 @@ p {
     border-color: #00a098;
     border-radius: 3px;
     padding: 6px 12px;
-    margin: 0px 15px;
+    margin: 0px 5px;
     color: #fafafa;
     box-shadow: none;
     border-style: none;

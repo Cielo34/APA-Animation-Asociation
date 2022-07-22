@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 // NAVBAR
 
 .logo img{
@@ -72,19 +76,24 @@
 }
 
 .contactPage{
+    width: 100%;
     @include display-flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 
+#botones{
+    margin: 0px 10px;
+}
 .buttons{
     @include display-flex;
+    
     .btn-callMe{
         background-color: $colorVerde;
         border-color: $colorVerde;
         border-radius: 3px;
         padding: 6px 12px;
-        margin: 0px 15px;
+        margin: 0px 5px;
         color: $white;
         box-shadow: none;
         border-style: none;
